@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+$error_bg: #f4ccd1;
+$error_fg: #803e47;
+$accent1: #1485CC;
+$accent_dark: #0971B2;
+$positive : #009900;
+$negative : #cc0000;
+
+*{
+    box-sizing: border-box;
+}
+
+.hidden{
+    display: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif, Arial;
+    margin: 0 auto;
+
+    .container{
+        width: 85%;
+        margin: 25px auto;
+        min-width: 380px;
+    }
+
+
+    h1{
+        text-transform: uppercase;
+        font-size: 1.65em;
+    }
+
+    .info {
+        padding: 14px 20px;
+        margin: 20px auto;
+        border-radius: 5px;
+        font-weight: bold;
+
+    }
+    .error{
+        background-color: $error_bg;
+        color: $error_fg;
+        border:1px solid #efb8bf;
+    }
+    .positive{
+        color: $positive;
+    }
+    .negative{
+        color: $negative;
+    }
+}
+
+form{
+
+    border: 3px solid black;
+    padding: 1em;
+    border-radius: 5px;
+
+    input, button, label{
+        display: block;
+    }
+    label{
+        margin-top: 8px;
+        font-size: 1.2em;
+        font-weight:bolder;
+    }
+    input{
+        width: 100%;
+        margin: 4px 0px;
+        padding: 10px 10px;
+        font-size: 1em;
+        border-radius: 5px;
+        border:1px solid lightgray;
+    }
+
+    button{
+        background-color: $accent1;
+        border: 1px solid $accent_dark;
+        text-transform: uppercase;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 1em;
+        padding: 8px 15px;
+        margin: 17px 0;
+    }
+}
+
+section.feedback-area{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    padding: 0px 15px;
+
+    .fb-tile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            text-transform: uppercase;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        .feed-back-amount{
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .fa-credit-card{
+            font-size: 1.9em;
+        }
+        .fa-money-bill-alt{
+            font-size: 2.1em;
+        }
+        .fa-pound-sign{
+            font-size: 2em;
+        }
+
+
+    }
+}
+
+.expenses-details{
+
+    margin-top: 2em;
+
+
+    .expense-table{
+        width:100%;
+
+        tbody{
+            tr:nth-child(even) {background: #eee};
+            tr:nth-child(odd) {background: #FFF};
+        }
+        thead{
+            font-weight: bold;
+            background-color: lighten($accent1, 40%);
+        }
+        td, th{
+            padding: 5px 50px 5px 5px;
+            text-align: left;
+        }
+        //
+
+
+
+    }
+}

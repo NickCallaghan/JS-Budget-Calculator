@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif, Arial;
+  margin: 0 auto;
+}
+
+body .container {
+  width: 85%;
+  margin: 25px auto;
+  min-width: 380px;
+}
+
+body h1 {
+  text-transform: uppercase;
+  font-size: 1.65em;
+}
+
+body .info {
+  padding: 14px 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+body .error {
+  background-color: #f4ccd1;
+  color: #803e47;
+  border: 1px solid #efb8bf;
+}
+
+body .positive {
+  color: #009900;
+}
+
+body .negative {
+  color: #cc0000;
+}
+
+form {
+  border: 3px solid black;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+form input, form button, form label {
+  display: block;
+}
+
+form label {
+  margin-top: 8px;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+form input {
+  width: 100%;
+  margin: 4px 0px;
+  padding: 10px 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+form button {
+  background-color: #1485CC;
+  border: 1px solid #0971B2;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 8px 15px;
+  margin: 17px 0;
+}
+
+section.feedback-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+  padding: 0px 15px;
+}
+
+section.feedback-area .fb-tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.feedback-area .fb-tile h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+section.feedback-area .fb-tile .feed-back-amount {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+section.feedback-area .fb-tile .fa-credit-card {
+  font-size: 1.9em;
+}
+
+section.feedback-area .fb-tile .fa-money-bill-alt {
+  font-size: 2.1em;
+}
+
+section.feedback-area .fb-tile .fa-pound-sign {
+  font-size: 2em;
+}
+
+.expenses-details {
+  margin-top: 2em;
+}
+
+.expenses-details .expense-table {
+  width: 100%;
+}
+
+.expenses-details .expense-table tbody tr:nth-child(even) {
+  background: #eee;
+}
+
+.expenses-details .expense-table tbody tr:nth-child(odd) {
+  background: #FFF;
+}
+
+.expenses-details .expense-table thead {
+  font-weight: bold;
+  background-color: #b4def8;
+}
+
+.expenses-details .expense-table td, .expenses-details .expense-table th {
+  padding: 5px 50px 5px 5px;
+  text-align: left;
+}
+/*# sourceMappingURL=main.css.map */
